@@ -7,20 +7,25 @@
     <link rel="stylesheet" href="/src/output.css">
     <link rel="icon" href="/src/image/favicon.jpg" type="image/x-icon">
 </head>
+<style>
+  header{
+    background: url("./image/image\ \(1\).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+</style>
 <body>
   <header>
-    <div class="relative w-full">
-      <img class="w-full filter brightness-50" src="./image/white-gray.avif" alt="">
-    </div>
-    <div class="w-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white h-64 flex flex-col justify-between">
+    
+    <div class="w-full text-center text-white flex flex-col justify-between py-[270px]">
       <div>
          <div>
            <p class="text-2xl">خوش امدید به</p>
          </div>
-         <h1 class="text-[68px]">
+         <p class="text-[33px] sm:text-[68px] ">
            شرکت طراحی سایت شهاب
-         </h1>
-         <h2 class="text-3xl">
+         </p>
+         <h2 class="text-2xl sm:text-3xl pt-0 sm:pt-2">
            سایت خود را به ما بسپارید
          </h2>
       </div>
@@ -32,45 +37,46 @@
         </a>
       </div>
     </div>
-        <div class="w-full absolute top-[6%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white h-64 flex flex-col justify-between ">
+        <!--header top-->
+        <div class=" w-full fixed top-[6%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white h-64 flex flex-col justify-between ">
           <div class="m-[auto] w-[80%] flex items-center justify-between px-2 bg-stone-200 filter brightness-50 py-2 px-4 rounded-xl">
-          <a href="#">
-            <img class="transition-all duration-200 ease-in-out hover:scale-95 w-12 rounded-full cursor-pointer" src="/src/image/favicon.jpg" alt="logo">
-          </a>
-          <div class="flex items-center justify-between gap-x-2 cursor-pointer transition-all duration-200 ease-in-out hover:scale-95 ">
-            <a href="/src/login/login.html"><p class="text-yellow-800 hidden sm:block">ورود | ثبت نام</p></a>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-yellow-800">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15M12 9l-3 3m0 0 3 3m-3-3h12.75" />
-            </svg>
-          </div>
+            <a href="#">
+              <img class="transition-all duration-200 ease-in-out hover:scale-95 w-12 rounded-full cursor-pointer" src="/src/image/favicon.jpg" alt="logo">
+            </a>
+            <div class="flex items-center justify-between gap-x-2 cursor-pointer transition-all duration-200 ease-in-out hover:scale-95 ">
+              <a href="/src/login/login.html"><p class="text-yellow-800 hidden sm:block">ورود | ثبت نام</p></a>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-yellow-800">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15M12 9l-3 3m0 0 3 3m-3-3h12.75" />
+              </svg>
+            </div>
           </div>
         </div>
   </header>
-  <section class="flex items-center justify-around">
-    <div>
-      <h2 class="text-[50px] text-yellow-900">طراحی سایتتان را به ما بسپارید<br> تا کسب و کارتان رشد کند</h2>
+  <section class="flex flex-col-reverse lg:flex-row items-center justify-center text-center pt-12">
+    <div class="flex-1">
+      <h2 class="text-[25px] lg:text-[40px] text-yellow-900">طراحی سایتتان را به ما بسپارید<br> تا کسب و کارتان رشد کند</h2>
         <p class="text-sm mt-12 text-yellow-800 ">**اگر به دنبال یک وب‌سایت حرفه‌ای، جذاب و با عملکرد عالی هستید،<br> تیم ما با سال‌ها تجربه در طراحی سایت، بهترین انتخاب برای شماست!<br>** ما با استفاده از جدیدترین فناوری‌های روز، سایتی **سریع، امن و کاملاً<br> ریسپانسیو** طراحی می‌کنیم که روی تمام دستگاه‌ها به‌خوبی نمایش داده شود.<br> با بهینه‌سازی حرفه‌ای سئو، سایت شما در رتبه‌های بالای گوگل قرار می‌گیرد<br> و مشتریان بیشتری جذب خواهید کرد.</p>
         <p class="text-sm mt-12 text-yellow-800">برای مشاوره در تلگرام روی دکمه زیر کلیک کنید</p>
-        <div class="flex p-4">
+        <div class="flex items-center justify-center p-4">
           <a href="https://t.me/Shahab_company" class="bg-orange-200 py-2 px-6 rounded-lg text-yellow-900 hover:bg-orange-300 transition-all duration-200 ease-in-out hover:scale-95">مشاوره</a>
         </div>
     </div>
-    <div>
+    <div class="flex-1">
       <img src="/src/image/website-designer-concept-illustration_114360-4449.avif" alt="image">
     </div>
   </section>
   <section class="bg-orange-50 w-full">
-    <h2 class="text-center text-[50px] text-yellow-900 mt-8">نمونه کارها</h2>
-    <div class="flex w-full justify-around py-9">
-      <div class="w-[30%] border border-yellow-900 rounded-lg shadow-lg flex flex-col">
-  <img class="rounded-lg w-full" src="./image/site1.jpg" alt="">
-  <p class="py-6 text-center border-b border-yellow-900 text-yellow-900"> وب سایت فروش طلا</p>
-  <div class="flex justify-center p-4"> 
-    <a href="https://www.digikala.com/" class="bg-orange-200 py-2 px-6 rounded-lg text-yellow-900 hover:bg-orange-300 transition-all duration-200 ease-in-out hover:scale-95">بازدید</a>
-  </div>
-</div>
+    <h2 class="text-center text-[50px] text-yellow-900 pt-12">نمونه کارها</h2>
+    <div class="flex flex-col sm:flex-row w-full justify-around py-9">
+      <div class="flex-1 m-8 border border-yellow-900 rounded-lg shadow-lg flex flex-col">
+      <img class="rounded-lg w-full" src="./image/site1.jpg" alt="">
+      <p class="py-6 text-center border-b border-yellow-900 text-yellow-900"> وب سایت فروش طلا</p>
+      <div class="flex justify-center p-4"> 
+       <a href="https://www.digikala.com/" class="bg-orange-200 py-2 px-6 rounded-lg text-yellow-900 hover:bg-orange-300 transition-all duration-200 ease-in-out hover:scale-95">بازدید</a>
+      </div>
+    </div>
 
-<div class="w-[30%] border border-yellow-900 rounded-lg shadow-lg flex flex-col">
+<div class="flex-1 m-8 border border-yellow-900 rounded-lg shadow-lg flex flex-col">
   <img class="rounded-lg w-full" src="./image/site4.jpg" alt="">
   <p class="py-6 text-center border-b border-yellow-900 text-yellow-900"> وب سایت پروتینی</p>
   <div class="flex justify-center p-4"> 
@@ -78,7 +84,7 @@
   </div>
 </div>
 
-<div class="w-[30%] border border-yellow-900 rounded-lg shadow-lg flex flex-col">
+<div class="flex-1 m-8 border border-yellow-900 rounded-lg shadow-lg flex flex-col">
   <img class="rounded-lg w-full" src="./image/site3.jpg" alt="">
   <p class="py-6 text-center border-b border-yellow-900 text-yellow-900">  وب سایت فروش</p>
   <div class="flex justify-center p-4"> 
