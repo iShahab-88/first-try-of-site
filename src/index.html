@@ -6,6 +6,7 @@
     <title>Shahab company</title>
     <link rel="stylesheet" href="/src/output.css">
     <link rel="icon" href="/src/image/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="/src/slider fails/slide.css">
 </head>
 <style>
   header{
@@ -14,9 +15,8 @@
     background-size: cover;
   }
 </style>
-<body>
+<body class="font-sans">
   <header>
-    
     <div class="w-full text-center text-white flex flex-col justify-between py-[270px]">
       <div>
          <div>
@@ -32,31 +32,33 @@
       <div class="mt-[30px]">
         <a href="/src/information/information.html">
           <button class="bg-white px-12 py-2 text-slate-950 transition-all duration-200 ease-in-out hover:scale-95 hover:rounded-lg ">
-          بیشتر بدانید
+          درباره
         </button>
         </a>
       </div>
     </div>
         <!--header top-->
-        <div class=" w-full fixed top-[6%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white h-64 flex flex-col justify-between ">
+        <div class=" w-full absolute top-[6%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white h-64 flex flex-col justify-between ">
           <div class="m-[auto] w-[80%] flex items-center justify-between px-2 bg-stone-200 filter brightness-50 py-2 px-4 rounded-xl">
-            <a href="#">
+            <a href="#" class="flex items-center ">
               <img class="transition-all duration-200 ease-in-out hover:scale-95 w-12 rounded-full cursor-pointer" src="/src/image/favicon.jpg" alt="logo">
+              <h2 class="pr-4 hidden md:block text-slate-600 text-2xl">Shahab Company</h2>
             </a>
             <div class="flex items-center justify-between gap-x-2 cursor-pointer transition-all duration-200 ease-in-out hover:scale-95 ">
-              <a href="/src/login/login.html"><p class="text-yellow-800 hidden sm:block">ورود | ثبت نام</p></a>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-yellow-800">
+              <a href="/src/login/login.html"><p class="text-slate-600 hidden sm:block">ورود | ثبت نام</p></a>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-slate-600">
               <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15M12 9l-3 3m0 0 3 3m-3-3h12.75" />
               </svg>
+              <a href="" class="hidden text-slate-600">نام کاربر</a>
             </div>
           </div>
         </div>
   </header>
-  <section class="flex flex-col-reverse lg:flex-row items-center justify-center text-center pt-12">
+  <section class="flex flex-col-reverse md:flex-row items-center justify-center text-center pt-12">
     <div class="flex-1">
-      <h2 class="text-[25px] lg:text-[40px] text-yellow-900">طراحی سایتتان را به ما بسپارید<br> تا کسب و کارتان رشد کند</h2>
-        <p class="text-sm mt-12 text-yellow-800 ">**اگر به دنبال یک وب‌سایت حرفه‌ای، جذاب و با عملکرد عالی هستید،<br> تیم ما با سال‌ها تجربه در طراحی سایت، بهترین انتخاب برای شماست!<br>** ما با استفاده از جدیدترین فناوری‌های روز، سایتی **سریع، امن و کاملاً<br> ریسپانسیو** طراحی می‌کنیم که روی تمام دستگاه‌ها به‌خوبی نمایش داده شود.<br> با بهینه‌سازی حرفه‌ای سئو، سایت شما در رتبه‌های بالای گوگل قرار می‌گیرد<br> و مشتریان بیشتری جذب خواهید کرد.</p>
-        <p class="text-sm mt-12 text-yellow-800">برای مشاوره در تلگرام روی دکمه زیر کلیک کنید</p>
+      <h2 class="text-[25px] lg:text-[40px] text-yellow-900 cursor-pointer">طراحی سایتتان را به ما بسپارید<br> تا کسب و کارتان رشد کند</h2>
+        <p class="text-sm mt-12 text-yellow-800 cursor-pointer">**اگر به دنبال یک وب‌سایت حرفه‌ای، جذاب و با عملکرد عالی هستید،<br> تیم ما با سال‌ها تجربه در طراحی سایت، بهترین انتخاب برای شماست!<br>** ما با استفاده از جدیدترین فناوری‌های روز، سایتی **سریع، امن و کاملاً<br> ریسپانسیو** طراحی می‌کنیم که روی تمام دستگاه‌ها به‌خوبی نمایش داده شود.<br> با بهینه‌سازی حرفه‌ای سئو، سایت شما در رتبه‌های بالای گوگل قرار می‌گیرد<br> و مشتریان بیشتری جذب خواهید کرد.</p>
+        <p class="text-sm mt-12 text-yellow-800 cursor-pointer">برای مشاوره در تلگرام روی دکمه زیر کلیک کنید</p>
         <div class="flex items-center justify-center p-4">
           <a href="https://t.me/Shahab_company" class="bg-orange-200 py-2 px-6 rounded-lg text-yellow-900 hover:bg-orange-300 transition-all duration-200 ease-in-out hover:scale-95">مشاوره</a>
         </div>
@@ -92,42 +94,46 @@
   </div>
 </div>
     </div>
+    <div class="flex justify-center p-4"> 
+    <a href="/src/items/items.html" class="bg-orange-200 py-2 px-6 rounded-lg text-yellow-900 hover:bg-orange-300 transition-all duration-200 ease-in-out hover:scale-95">ادامه</a>
+  </div>
   </section>
-
-  <section class=" flex bg-orange-200 w-full h-[400px] items-center justify-around">
-    <div class=" flex bg-white justify-around w-[70%] h-80 rounded-2xl items-center justify-center shadow-lg">
-      <div>
-        <h2 class="text-[40px] text-orange-400">محمد شهاب</h2>
-        <h3 class="text-[50px]"> برنامه نویس  فرانت اند </h3>
-        <br>
-        <div class="flex p-4">
+  <!--slider-->
+  <div class="slider py-12 bg-orange-100">
+    <div class="slides">
+      <div class="slide pt-12">
+        <div class="w-64 md:w-[250px] h-scren border border-yellow-900 rounded-lg overflow-hidden m-[auto]">
+        <div>
+          <img class="h-[250px] w-full bg-gray-200 flex items-center justify-center" src="image/picsh1.jpg" alt="">
+        </div>
+        <div class="p-4 bg-white">
+          <h2 class="text-3xl">شهاب</h2>
+          <span class="text-xl text-sky-500">فرانت کار</span>
+          <p class="mb-4 text-gray-500">من  فرانت را انتخاب کردم چون دیزاین را دوست  دارم</p>
           <a href="/src/profilecard/card.html" class="bg-orange-200 py-2 px-6 rounded-lg text-yellow-900 hover:bg-orange-300 transition-all duration-200 ease-in-out hover:scale-95">بازدید</a>
         </div>
       </div>
-        <div class="relative w-64 h-64">
-           <div class="absolute inset-0 bg-orange-300 rounded-xl rotate-12 z-0"></div>
-           <div class="absolute inset-0 bg-orange-400 rounded-xl z-10"></div>
-           <img src="/src/image/picsh.png" alt="Profile" class="relative z-20 w-full h-full  rounded-xl">
+      </div>
+      <div class="slide pt-12">
+        <div class="w-64 md:w-[250px] h-scren border border-yellow-900 rounded-lg overflow-hidden m-[auto]">
+        <div>
+          <img class="h-[250px] w-full bg-gray-200 flex items-center justify-center" src="image/picsh1.jpg" alt="">
         </div>
-    </div>
-  </section>
-  <section class=" flex bg-orange-200 w-full h-[400px] items-center justify-around">
-    <div class=" flex bg-white justify-around w-[70%] h-80 rounded-2xl items-center justify-center shadow-lg">
-      <div>
-        <h2 class="text-[40px] text-orange-400">محمد رضا</h2>
-        <h3 class="text-[50px]"> برنامه نویس بک اند </h3>
-        <br>
-        <div class="flex p-4">
+        <div class="p-4 bg-white">
+          <h2 class="text-3xl">محمد رضا</h2>
+          <span class="text-xl text-sky-500">بک اند کار</span>
+          <p class="mb-4 text-gray-500">من  بک اند را انتخاب کردم چون حل  مساعل را دوست  دارم</p>
           <a href="/src/profilecard/card1.html" class="bg-orange-200 py-2 px-6 rounded-lg text-yellow-900 hover:bg-orange-300 transition-all duration-200 ease-in-out hover:scale-95">بازدید</a>
         </div>
       </div>
-        <div class="relative w-64 h-64">
-           <div class="absolute inset-0 bg-orange-300 rounded-xl rotate-12 z-0"></div>
-           <div class="absolute inset-0 bg-orange-400 rounded-xl z-10"></div>
-           <img src="/src/image/picsh.png" alt="Profile" class="relative z-20 w-full h-full  rounded-xl">
-        </div>
+      </div>
     </div>
-  </section>
+    <div class="but mt-12 gap-x-2">
+      <button class="next bg-orange-200 w-12 h-12 rounded-full text-yellow-900 hover:bg-orange-300 transition-all duration-200 ease-in-out hover:scale-95" onclick="prevSlide()">&#10094</button>
+    <button class="prev bg-orange-200 w-12 h-12 rounded-full text-yellow-900 hover:bg-orange-300 transition-all duration-200 ease-in-out hover:scale-95" onclick="nextSlide()">&#10095</button>
+    </div>
+  </div>
+  <!--footer-->
 <footer class="flex flex-col-reverse md:flex-row gap-y-12 bg-gray-100 p-6 items-center bg-slate-900">
   <div class="flex-1 flex justify-center gap-4 flex-col-reverse md:flex-row gap-y-12">
     <a href="#" class="transition-all duration-200 hover:scale-95 text-white">
@@ -172,5 +178,6 @@
   </form>
 </div>
 </div>
+<script src="/src/slider fails/slider.js"></script>
 </body>
 </html>
