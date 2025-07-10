@@ -7,7 +7,34 @@
     <link rel="stylesheet" href="/src/output.css">
     <link rel="icon" href="/src/image/favicon.jpg" type="image/x-icon">
 </head>
+<style>
+   #loader{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  #preloader{
+    background: url(/src/image/loader.gif) white no-repeat center ;
+    height: 200px;
+    width:350px ;
+    position: fixed;
+    z-index: 100;
+    display: grid;
+    place-items: center;
+    border-radius: 16px;
+    top: 290px;
+  }
+</style>
 <body class="font-sans">
+    <div id="loader">
+    <div id="preloader">
+      <p class="mt-[140px]">کمی شکیبا باشید ...</p>
+    </div>
+  </div>
     <header class="">
         <div class=" w-full absolute top-[6%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white h-64 flex flex-col justify-between ">
           <div class="m-[auto] w-[80%] flex items-center justify-between px-2 bg-stone-200 filter brightness-50 py-2 px-4 rounded-xl">
@@ -148,5 +175,11 @@
   </form>
 </div>
 </div>
+<script>
+  var loader = document.getElementById("loader");
+  window.addEventListener("load", function(){
+    loader.style.display = "none";
+  })
+</script>
 </body>
 </html>

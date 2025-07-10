@@ -14,8 +14,33 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+  #loader{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  #preloader{
+    background: url(/src/image/loader.gif) white no-repeat center ;
+    height: 200px;
+    width:350px ;
+    position: fixed;
+    z-index: 100;
+    display: grid;
+    place-items: center;
+    border-radius: 16px;
+    top: 290px;
+  }
 </style>
 <body class="font-sans">
+  <div id="loader">
+    <div id="preloader">
+      <p class="mt-[140px]">کمی شکیبا باشید ...</p>
+    </div>
+  </div>
   <header>
     <div class="w-full text-center text-white flex flex-col justify-between py-[270px]">
       <div>
@@ -179,5 +204,11 @@
 </div>
 </div>
 <script src="/src/slider fails/slider.js"></script>
+<script>
+  var loader = document.getElementById("loader");
+  window.addEventListener("load", function(){
+    loader.style.display = "none";
+  })
+</script>
 </body>
 </html>
