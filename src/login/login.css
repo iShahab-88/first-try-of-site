@@ -244,6 +244,9 @@ body{
 .col-2{
     overflow:hidden ;
 }
+.ava{
+    border:3px solid rgba(255, 255, 255, 0.3);
+}
 @media(max-width:892px){
     .form-container{
         width:400px;
