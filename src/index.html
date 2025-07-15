@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shareon company</title>
+    <title>Shartech company</title>
     <link rel="stylesheet" href="/src/output.css">
     <link rel="icon" href="/src/image/favicon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="/src/slider fails/slide.css">
+    <link rel="stylesheet" href="/src/sidebar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <style>
   header{
@@ -34,6 +36,9 @@
     border-radius: 16px;
     top: 290px;
   }
+  .ava{
+    border:3px solid rgba(255, 255, 255, 0.3);
+  }
 </style>
 <body class="font-sans">
   <div id="loader">
@@ -48,7 +53,7 @@
            <p class="text-2xl">خوش امدید به</p>
          </div>
          <p class="text-[33px] sm:text-[68px] ">
-           شرکت طراحی سایت شارئون
+           شرکت طراحی سایت شارتک
          </p>
          <h2 class="text-2xl sm:text-3xl pt-0 sm:pt-2">
            سایت خود را به ما بسپارید
@@ -67,16 +72,22 @@
           <div class="m-[auto] w-[80%] flex items-center justify-between px-2 bg-stone-200 filter brightness-50 py-2 px-4 rounded-xl">
             <a href="#" class="flex items-center ">
               <img class="transition-all duration-200 ease-in-out hover:scale-95 w-12 rounded-full cursor-pointer" src="/src/image/favicon.jpg" alt="logo">
-              <h2 class="pr-4 hidden md:block text-slate-600 text-2xl">Shareon Company</h2>
+              <h2 class="pr-4 hidden md:block text-slate-600 text-2xl">Shartech Company</h2>
             </a>
-            <div class="flex items-center justify-between gap-x-2 cursor-pointer transition-all duration-200 ease-in-out hover:scale-95 ">
-              <a href="/src/login/login.html"><p class="text-slate-600 hidden sm:block">ورود | ثبت نام</p></a>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-slate-600">
+            <div class="flex items-center justify-between gap-x-2 cursor-pointer">
+              <div class="transition-all duration-200 ease-in-out hover:scale-95 flex items-center justify-center">
+                <a href="/src/login/login.html"><p class="text-slate-600 hidden sm:block ">ورود | ثبت نام</p></a>
+              <a href="/src/login/login.html"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-slate-600">
               <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15M12 9l-3 3m0 0 3 3m-3-3h12.75" />
-              </svg>
-              <a href="" class="hidden text-slate-600">نام کاربر</a>
+              </svg></a>
+              </div>
             </div>
+            <!-- profile -->
+          <div class="ava hidden w-12 h-12 rounded-full overflow-hidden">
+            <img id="preview" class="w-12 h-12 object-cover" src="/src/image/avatar.jpg" alt="عکس شما" />
           </div>
+          <!-- end profile-->
+            </div>
         </div>
   </header>
   <section class="flex flex-col-reverse md:flex-row items-center justify-center text-center pt-12">
@@ -142,7 +153,7 @@
       <div class="slide pt-12 shadow-lg">
         <div class="w-64 md:w-[250px] h-scren border border-yellow-900 rounded-lg overflow-hidden m-[auto]">
         <div>
-          <img class="h-[250px] w-full bg-gray-200 flex items-center justify-center" src="image/picsh1.jpg" alt="">
+          <img class="h-[250px] w-full bg-gray-200 flex items-center justify-center" src="image/Screenshot 2025-02-22 170858.png" alt="">
         </div>
         <div class="p-4 bg-white">
           <h2 class="text-3xl">محمد رضا</h2>

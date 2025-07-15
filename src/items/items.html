@@ -38,17 +38,24 @@
     <header class="h-48">
         <div class=" w-full absolute top-[6%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white h-64 flex flex-col justify-between ">
           <div class="m-[auto] w-[80%] flex items-center justify-between px-2 bg-stone-200 filter brightness-50 py-2 px-4 rounded-xl">
-            <a href="/src/index.html" class="flex items-center ">
+            <a href="#" class="flex items-center ">
               <img class="transition-all duration-200 ease-in-out hover:scale-95 w-12 rounded-full cursor-pointer" src="/src/image/favicon.jpg" alt="logo">
-              <h2 class="pr-4 hidden md:block text-slate-600 text-2xl">Shareon Company</h2>
+              <h2 class="pr-4 hidden md:block text-slate-600 text-2xl">Shartech Company</h2>
             </a>
-            <div class="flex items-center justify-between gap-x-2 cursor-pointer transition-all duration-200 ease-in-out hover:scale-95 ">
-              <a href="/src/login/login.html"><p class="text-slate-600 hidden sm:block">ورود | ثبت نام</p></a>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-slate-600">
+            <div class="flex items-center justify-between gap-x-2 cursor-pointer">
+              <div class="transition-all duration-200 ease-in-out hover:scale-95 flex items-center justify-center">
+                <a href="/src/login/login.html"><p class="text-slate-600 hidden sm:block ">ورود | ثبت نام</p></a>
+              <a href="/src/login/login.html"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-slate-600">
               <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15M12 9l-3 3m0 0 3 3m-3-3h12.75" />
-              </svg>
+              </svg></a>
+              </div>
             </div>
+            <!-- profile -->
+          <div class="ava hidden w-12 h-12 rounded-full overflow-hidden">
+            <img id="preview" class="w-12 h-12 object-cover" src="/src/image/avatar.jpg" alt="عکس شما" />
           </div>
+          <!-- end profile-->
+            </div>
         </div>
     </header>
     <!---->
@@ -118,27 +125,6 @@
         <label class="block text-sm font-medium mb-1" for="comment">دیدگاه <span class="text-red-600">*</span></label>
         <textarea id="comment" rows="5" class="w-full rounded-xl border border-gray-300 p-3 resize-none"></textarea>
       </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-        <div>
-          <label class="block text-sm font-medium mb-1" for="name">نام <span class="text-red-600">*</span></label>
-          <input type="text" id="name" class="w-full rounded-xl border border-gray-300 p-2" />
-        </div>
-        <div>
-          <label class="block text-sm font-medium mb-1" for="email">ایمیل <span class="text-red-600">*</span></label>
-          <input type="email" id="email" class="w-full rounded-xl border border-gray-300 p-2" />
-        </div>
-        <div>
-          <label class="block text-sm font-medium mb-1" for="website">وب‌سایت</label>
-          <input type="text" id="website" class="w-full rounded-xl border border-gray-300 p-2" />
-        </div>
-      </div>
-
-      <div class="flex items-center gap-2 mt-2">
-        <input id="save-info" type="checkbox" class="accent-black" />
-        <label for="save-info" class="text-sm">ذخیره نام، ایمیل و وب‌سایت من در مرورگر برای زمانی که دوباره دیدگاهی می‌نویسم.</label>
-      </div>
-
       <button type="submit" class="mt-4 px-6 py-2 bg-black text-white rounded-full hover:bg-gray-800 transition">
         فرستادن دیدگاه
       </button>
